@@ -1,0 +1,15 @@
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.Core\bin\Debug\net7.0\BlazorSampleCrud.Core.deps.json
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.Core\bin\Debug\net7.0\BlazorSampleCrud.Core.dll
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.Core\bin\Debug\net7.0\BlazorSampleCrud.Core.pdb
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.Core\obj\Debug\net7.0\BlazorSampleCrud.Core.csproj.AssemblyReference.cache
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.Core\obj\Debug\net7.0\BlazorSampleCrud.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.Core\obj\Debug\net7.0\BlazorSampleCrud.Core.AssemblyInfoInputs.cache
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.Core\obj\Debug\net7.0\BlazorSampleCrud.Core.AssemblyInfo.cs
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.Core\obj\Debug\net7.0\BlazorSampleCrud.Core.csproj.CoreCompileInputs.cache
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.Core\obj\Debug\net7.0\BlazorSampleCrud.Core.dll
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.Core\obj\Debug\net7.0\refint\BlazorSampleCrud.Core.dll
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.Core\obj\Debug\net7.0\BlazorSampleCrud.Core.pdb
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.Core\obj\Debug\net7.0\ref\BlazorSampleCrud.Core.dll
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.Core\bin\Debug\net7.0\BlazorSampleCrud.DataAccessLayer.dll
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.Core\bin\Debug\net7.0\BlazorSampleCrud.DataAccessLayer.pdb
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.Core\obj\Debug\net7.0\BlazorSampleCrud.Core.csproj.CopyComplete

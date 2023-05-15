@@ -1,0 +1,129 @@
+﻿@page "/add-customer"
+@page "/edit/{id:int}"
+@inject HttpClient http;
+
+
+<PageTitle>@_title</PageTitle>
+
+<h3>@_title</h3>
+
+<EditForm Model="@_customer" OnValidSubmit="SubmitForm">
+    <FluentValidationValidator></FluentValidationValidator>
+    <ValidationSummary></ValidationSummary>
+    <FormSection Title="Customer Basic Data" Description="Customer details to be filled by the user.Note that these specifications are validated.">
+        <FormFieldSet>
+            <label for="FirstName" class="fw-bold text-secondary">FirstName</label><br/>
+            <InputText @bind-Value="_customer.FirstName" class="form-control" id="FirstName"></InputText>
+            <ValidationMessage For="@(()=>_customer.FirstName)"/>
+        </FormFieldSet>
+
+        <FormFieldSet>
+            <label for="LastName" class="fw-bold text-secondary">LastName</label><br/>
+            <InputText @bind-Value="_customer.LastName" class="form-control" id="LastName"></InputText>
+            <ValidationMessage For="@(()=>_customer.LastName)" />
+        </FormFieldSet>
+
+        <FormFieldSet>
+            <label for="DateOfBirth" class="fw-bold text-secondary">Date Of Birth</label><br/>
+            <InputDate @bind-Value="_customer.DateOfBirth" class="form-control" id="DateOfBirth" Format="yyyy MM dd"></InputDate>
+            <ValidationMessage For="@(()=>_customer.DateOfBirth)" />
+        </FormFieldSet>
+
+        <FormFieldSet>
+            <label for="PhoneNumber" class="fw-bold text-secondary">Phone Number</label><br/>
+            <InputText @bind-Value="_customer.PhoneNumber" class="form-control" id="PhoneNumber"></InputText>
+            <ValidationMessage For="@(()=>_customer.PhoneNumber)" />
+        </FormFieldSet>
+
+        <FormFieldSet>
+            <label for="Email" class="fw-bold text-secondary">Email</label><br/>
+            <InputText @bind-Value="_customer.Email" class="form-control" id="Email"></InputText>
+            <ValidationMessage For="@(()=>_customer.Email)" />
+        </FormFieldSet>
+
+        <FormFieldSet>
+            <label for="BankAccountNumber" class="fw-bold text-secondary">Bank Account Number</label><br/>
+            <InputText @bind-Value="_customer.BankAccountNumber" class="form-control" id="BankAccountNumber"></InputText>
+            <ValidationMessage For="@(()=>_customer.BankAccountNumber)" />
+        </FormFieldSet>
+    </FormSection>
+    <div class="mt-4 mb-4">
+        <div class="row">
+            
+            @if (status.StatusCode == 1)
+            {
+                <div class="@_message">
+                    @status?.StatusMessage
+                </div>
+            }
+            else
+            {
+                <div class="@_message">
+                    @status?.StatusMessage
+                </div>
+            }
+            
+            
+
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-outline-success" type="submit">Submit</button>
+                <button class="btn btn-outline-secondary" type="button" @onclick="@(() => _customer = new CustomerDto())">
+                    Reset
+                </button>
+
+            </div>
+        </div>
+    </div>
+</EditForm>
+
+
+
+
+
+@code {
+    [Parameter]
+    public int Id {get; set;}
+
+    
+    private string _title = "Add Customer";
+    private CustomerDto? _customer = new CustomerDto();
+    private string _message = "";
+    StatusDto? status = new StatusDto();
+
+
+
+    private readonly CustomerDtoValidator Validator = new CustomerDtoValidator();
+    private EditContext? _editContext;
+
+    public async Task SubmitForm()
+    {
+        
+        if (status != null)
+        {
+            status.StatusCode = 0;
+            status.Succuss = false;
+            status.StatusMessage = "Wait.....";
+            var response = await http.PostAsJsonAsync("api/Customer/AddOrUpdate", _customer);
+            status = await response.Content.ReadFromJsonAsync<StatusDto>();
+            _message = status?.StatusCode == 1 ? "text-success" : "text-danger";
+            StateHasChanged();
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        _editContext = new EditContext(_customer);
+        _editContext.OnFieldChanged += HandelFieldChanged;
+        if (Id > 0)
+        {
+            _customer = await http.GetFromJsonAsync<CustomerDto>($"api/Customer/GetById/{Id}");
+        }
+    }
+
+    private void HandelFieldChanged(object sender, FieldChangedEventArgs e)
+    {
+        StateHasChanged();
+        _editContext.SetFieldCssClassProvider(new BootstrapCssClassProvider());
+
+    }
+}

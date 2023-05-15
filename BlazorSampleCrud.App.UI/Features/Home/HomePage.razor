@@ -1,0 +1,81 @@
+﻿@page "/"
+@using System.Globalization
+@inject HttpClient _httpClient
+
+<PageTitle>Customer Home Page</PageTitle>
+<h3>HomePage</h3>
+
+@if (customer == null)
+{
+    <div>Loading Customer Data.....</div>
+
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Date Of Birth</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Email</th>
+            <th scope="col">Bank Account Number</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var Item in customer)
+        {
+            var datetime = Item.DateOfBirth;
+            var formatInfo = CultureInfo.CreateSpecificCulture("en-US").DateTimeFormat;
+            formatInfo.DateSeparator = "-";
+            var result = datetime.ToString("yyyy/MM/dd", formatInfo);
+            <tr>
+                <th scope="row">@Item.Id</th>
+                <td>@Item.FirstName</td>
+                <td>@Item.LastName</td>
+                <td>@result</td>
+                <td>@Item.PhoneNumber</td>
+                <td>@Item.Email</td>
+                <td>@Item.BankAccountNumber</td>
+                <td>
+                    <a href="/edit/@Item.Id" class="btn btn-success">Edit</a>
+                    <a class="btn btn-danger" @onclick="async () => await Delete(Item.Id)">Delete</a>
+                    <a class="btn btn-primary" @onclick="@(() => OnselectCustomerHandler(Item))">Selected</a>
+                </td>
+
+            </tr>
+        }
+        </tbody>
+    </table>
+
+
+    <div>
+        <CustomerDetails customerDto="SelectedCustomer"></CustomerDetails>
+    </div>
+}
+@code {
+
+    private List<CustomerDto>? customer = new List<CustomerDto>();
+    public CustomerDto SelectedCustomer { get; set; }
+    private async Task Delete(int Id)
+    {
+        var response = await _httpClient.DeleteFromJsonAsync<CustomerDto>($"api/Customer/DeleteById/{Id}");
+        await OnInitializedAsync();
+    }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await _httpClient.GetFromJsonAsync<List<CustomerDto>>("/api/Customer");
+        if (response != null)
+            customer = response;
+
+    }
+
+    void OnselectCustomerHandler(CustomerDto customer)
+    {
+        SelectedCustomer = customer;
+    }
+}

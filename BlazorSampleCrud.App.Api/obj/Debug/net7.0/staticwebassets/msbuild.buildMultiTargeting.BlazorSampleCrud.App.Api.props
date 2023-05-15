@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BlazorSampleCrud.App.Api.props" />
+</Project>

@@ -1,0 +1,14 @@
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.DataAccessLayer\bin\Debug\net7.0\BlazorSampleCrud.DataAccessLayer.deps.json
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.DataAccessLayer\bin\Debug\net7.0\BlazorSampleCrud.DataAccessLayer.runtimeconfig.json
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.DataAccessLayer\bin\Debug\net7.0\BlazorSampleCrud.DataAccessLayer.dll
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.DataAccessLayer\bin\Debug\net7.0\BlazorSampleCrud.DataAccessLayer.pdb
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.DataAccessLayer\obj\Debug\net7.0\BlazorSampleCrud.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.DataAccessLayer\obj\Debug\net7.0\BlazorSampleCrud.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.DataAccessLayer\obj\Debug\net7.0\BlazorSampleCrud.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.DataAccessLayer\obj\Debug\net7.0\BlazorSampleCrud.DataAccessLayer.AssemblyInfo.cs
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.DataAccessLayer\obj\Debug\net7.0\BlazorSampleCrud.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.DataAccessLayer\obj\Debug\net7.0\BlazorSampleCrud.DataAccessLayer.dll
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.DataAccessLayer\obj\Debug\net7.0\refint\BlazorSampleCrud.DataAccessLayer.dll
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.DataAccessLayer\obj\Debug\net7.0\BlazorSampleCrud.DataAccessLayer.pdb
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.DataAccessLayer\obj\Debug\net7.0\BlazorSampleCrud.DataAccessLayer.genruntimeconfig.cache
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.DataAccessLayer\obj\Debug\net7.0\ref\BlazorSampleCrud.DataAccessLayer.dll

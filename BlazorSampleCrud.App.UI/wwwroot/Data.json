@@ -1,0 +1,53 @@
+[
+  {
+    "Id": 1,
+    "FirstName": "Saeed",
+    "LastName": "Rajabi",
+    "DateOfBirth": "1999-08-23T00:00:00",
+    "PhoneNumber": "09187991020",
+    "Email": "Saeed.ware0098@gmail.com",
+    "BankAccountNumber": "494839084"
+
+  },
+  {
+    "Id": 2,
+    "FirstName": "Ali",
+    "LastName": "Ahmadi",
+    "DateOfBirth": "1999-08-23T00:00:00",
+    "PhoneNumber": "09180009988",
+    "Email": "Ali.Ahmadi@gmail.com",
+    "BankAccountNumber": "494839084"
+
+  },
+  {
+    "Id": 3,
+    "FirstName": "Sara",
+    "LastName": "Moradi",
+    "DateOfBirth": "1999-08-23T00:00:00",
+    "PhoneNumber": "09128887654",
+    "Email": "Sara.Moradi0098@gmail.com",
+    "BankAccountNumber": "9888839874"
+
+  },
+  {
+    "Id": 4,
+    "FirstName": "Mohsen",
+    "LastName": "Tajik",
+    "DateOfBirth": "1999-08-23T00:00:00",
+    "PhoneNumber": "09357778869",
+    "Email": "Mohsen.Tajic0098@gmail.com",
+    "BankAccountNumber": "39485948304"
+
+  },
+  {
+    "Id": 5,
+    "FirstName": "Maryam",
+    "LastName": "Nasiri",
+    "DateOfBirth": "1999-08-23T00:00:00",
+    "PhoneNumber": "09369876543",
+    "Email": "Maryam.Nasiri@gmail.com",
+    "BankAccountNumber": "03948593845"
+
+  }
+
+]

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlazorSampleCrud.App.Shread\BlazorSampleCrud.App.Shread.csproj" />
+    <ProjectReference Include="..\BlazorSampleCrud.App.UI\BlazorSampleCrud.App.UI.csproj" />
+    <ProjectReference Include="..\BlazorSampleCrud.Core\BlazorSampleCrud.Core.csproj" />
+    <ProjectReference Include="..\BlazorSampleCrud.DataAccessLayer\BlazorSampleCrud.DataAccessLayer.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.App.Shread\bin\Debug\net7.0\BlazorSampleCrud.App.Shread.deps.json
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.App.Shread\bin\Debug\net7.0\BlazorSampleCrud.App.Shread.dll
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.App.Shread\bin\Debug\net7.0\BlazorSampleCrud.App.Shread.pdb
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.App.Shread\obj\Debug\net7.0\BlazorSampleCrud.App.Shread.csproj.AssemblyReference.cache
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.App.Shread\obj\Debug\net7.0\BlazorSampleCrud.App.Shread.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.App.Shread\obj\Debug\net7.0\BlazorSampleCrud.App.Shread.AssemblyInfoInputs.cache
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.App.Shread\obj\Debug\net7.0\BlazorSampleCrud.App.Shread.AssemblyInfo.cs
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.App.Shread\obj\Debug\net7.0\BlazorSampleCrud.App.Shread.csproj.CoreCompileInputs.cache
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.App.Shread\obj\Debug\net7.0\BlazorSampleCrud.App.Shread.dll
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.App.Shread\obj\Debug\net7.0\refint\BlazorSampleCrud.App.Shread.dll
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.App.Shread\obj\Debug\net7.0\BlazorSampleCrud.App.Shread.pdb
+C:\Users\SaeeD\source\repos\BlazorSampleCrud.App\BlazorSampleCrud.App.Shread\obj\Debug\net7.0\ref\BlazorSampleCrud.App.Shread.dll

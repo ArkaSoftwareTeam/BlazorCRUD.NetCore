@@ -1,0 +1,42 @@
+﻿<div class="row @_displayClass">
+    @if (customerDto is not null)
+    {
+        <div class="card text-center myStyle">
+            <div class="card-header">
+                Customer @customerDto.Id Selected Details
+             </div>
+            <div class="card-body">
+                <h5 class="card-title">
+                    @customerDto.FirstName; @customerDto.LastName;
+                </h5>
+                <p class="card-text">The Customer Date Of Birth Is : @customerDto.DateOfBirth</p>
+                <a class="btn btn-primary" @onclick="@(()=> Close())">Close The Details</a>
+            </div>
+        </div>
+        
+    }
+
+</div>
+
+
+
+
+@code {
+
+    [Parameter]
+    public CustomerDto? customerDto { get; set; }
+
+    string _displayClass = "d-none";
+
+    protected override void OnParametersSet()
+    {
+        _displayClass = customerDto is null ? "d-none" : "d-block";
+    }
+
+    private void Close()
+    {
+        _displayClass = "d-none";
+    }
+
+
+}
