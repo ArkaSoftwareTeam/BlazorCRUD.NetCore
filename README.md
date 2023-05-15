@@ -25,7 +25,12 @@ Configure the database connection string: Open the `appsettings.json` file and u
 { "ConnectionStrings": { "DefaultConnection": "Server=<ServerName>;Database=<DatabaseName>;User Id=<Username>;Password=<Password>;" } } 
 ```
 
-### Run the migrations: 
+### Prerequisite:
+- Enter the `BlazorSampleCrud.DataAccessLayer` and delete the migration folder.
+- After opening the Console, put the `Default Project` on a `BlazorSampleCrud.DataAccessLayer`
+
+
+### Run the migrations:
 Open the Package Manager Console and run the following command to apply the database migrations:
   
   
